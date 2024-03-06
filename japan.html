@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main class="japan">
+        <section class="container">
+            <div id="hero">
+                <nav>
+                    <a href=""><i class="fa fa-bars"></i></a>
+                    <a href="" class="language"><i class="fa fa-globe"></i></a>
+                </nav>
+                <div class="language-content hidden">
+                    <a href="index.html"><img src="images/usa-flag.png" alt=""> English</a>
+                    <a href="japan.html"><img src="images/japan-flag.png" alt=""> Japanese</a>
+                </div>
+    
+                <div>
+                    <h1 class="red">ヴァロラント</h1>
+                    <h2 class="stroke">トーナメント</h2>
+                    <h3 class="red">2024</h3>
+                    <p><span>争いに飛び込み、</span> <br>伝説として浮上する。</p>
+                    <a href="#content" class="see-details">詳細を見る <br> <i class="fa fa-caret-down"></i></a>
+                </div>
+            </div>
+            <div id="content">
+                <div id="reyna">
+                    <div>
+                        <div>
+                            <h2><span class="red">01.</span> レイナ</h2>
+                            <div>
+                                <h3 class="stroke">トップピックエージェント</h3>
+                                <img src="images/Framed-Reyna.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="details">
+                    <h4><img src="images/Duelist-Symbol.png" alt=""> デュエリスト <span class="gray">/ 役割</span></h4>
+                    <p>ズヤニャ・モンドラゴンはメキシコ出身のレディアントで、殺した人々の魂から生命エネルギーを吸収する力を持っています。機械が関与する悲惨な出来事の影響を受けたモンドラゴンは、テクノロジーと人類に対する強い嫌悪感を持ち、自分自身と仲間のラジアントこそが地球の真の未来であると信じています。 VALORANTプロトコルのエージェントとして活動する前、彼女は人々が王国から脱出して癒されるのを助けるための聖域を設立し、そこにコミュニティを確立して彼らの保護者および復讐者となりました。</p>
+                </div>
+                <img src="images/Reyna-Figure.png" alt="" class="reyna-figure">
+            </div>
+            <div id="signup">
+                <div>
+                    <span class="gray">戦いに備える</span>
+                    <h3>として立ち上がる <span class="red">勇敢な</span> チャンピオン</h3>
+                    <p>今すぐサインアップして、独占アクセス、インサイダー最新情報、そして卓越した戦術を最前列で鑑賞しましょう!</p>
+                    <fieldset>
+                        <input type="text" placeholder="メールアドレスを入力...">
+                        <a href="#"><button>今すぐ登録してください!</button></a>
+                    </fieldset>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
+
+<script>
+    $('.language').on("click",function(){
+        $(".language-content").slideToggle();
+        event.preventDefault();
+    });
+</script>

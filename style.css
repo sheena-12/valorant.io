@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: valorant;
+  src: url(valorant.ttf);
+  font-weight: bold;
+}
+h1 {
+  font-size: 4.5em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+img {
+  width: 100%;
+}
+
+.red {
+  color: #ff4654;
+}
+
+.gray {
+  font-size: 20px;
+  font-weight: normal;
+  color: #717171;
+  text-transform: uppercase;
+}
+
+.stroke {
+  color: #0f1923;
+  text-shadow: -1px 1px 1px #fff, 1px 1px 1px #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
+  text-transform: uppercase;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  background-color: #0f1923;
+  color: #FFFFFF;
+  font-family: "Gotham", "Helvetica Neue", sans-serif;
+}
+@media only screen and (min-width: 780px) {
+  main .container {
+    min-width: 850px;
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+}
+main .container > div {
+  height: 100vh;
+}
+main #hero {
+  background-image: url(images/Hero-Banner.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+main #hero nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+main #hero nav i {
+  font-size: 2em;
+  color: #FFFFFF;
+}
+main #hero .language-content {
+  background: white;
+  height: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  right: 20px;
+  top: 60px;
+  font-size: 1.2em;
+  color: black;
+  padding: 20px;
+  border-radius: 3px;
+  text-align: left;
+}
+main #hero .language-content > a {
+  text-decoration: none;
+  line-height: 1.5em;
+}
+main #hero .language-content > a:first-child::after {
+  content: "";
+  background: #d3d3d3;
+  height: 1px;
+  margin: 1em 0;
+  display: block;
+}
+main #hero .language-content > a img {
+  width: 25px;
+  vertical-align: sub;
+}
+main #hero h1 {
+  font-family: valorant;
+}
+main #hero h2 {
+  letter-spacing: 3px;
+}
+main #hero p {
+  font-size: 2.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  top: 2%;
+}
+main #hero p > span {
+  font-size: 1.2em;
+}
+main #hero h3 {
+  display: flex;
+  flex-direction: row;
+}
+main #hero h3::before {
+  content: "";
+  flex: 1 1;
+  border-bottom: 3px solid #ff4654;
+  margin: auto;
+  margin-right: 10px;
+}
+main #hero .see-details {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-decoration: none;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 100px;
+}
+@media only screen and (max-width: 420px) {
+  main #hero h1 {
+    font-size: 4em;
+  }
+  main #hero h2 {
+    letter-spacing: 0;
+  }
+  main #hero p {
+    font-size: 1.9em;
+  }
+}
+@media only screen and (max-width: 400px) {
+  main #hero h1 {
+    font-size: 4em;
+  }
+  main #hero h2 {
+    font-size: 2.5em;
+    letter-spacing: 0;
+  }
+  main #hero p {
+    font-size: 1.8em;
+  }
+}
+@media only screen and (min-width: 780px) {
+  main #hero {
+    background-position: right;
+  }
+  main #hero > div:last-child {
+    width: 50%;
+    text-align: left;
+  }
+  main #hero > div:last-child .see-details {
+    left: 30px;
+  }
+  main #hero > div:last-child .see-details i {
+    position: absolute;
+    left: 55px;
+  }
+}
+main #content {
+  position: relative;
+  padding: 20px;
+  height: auto;
+  overflow: hidden;
+}
+main #content #reyna div:first-child {
+  display: flex;
+}
+@media only screen and (min-width: 780px) {
+  main #content #reyna div:first-child div > img {
+    width: 38%;
+  }
+}
+main #content #reyna h2 {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-transform: uppercase;
+  font-size: 4em;
+  line-height: 0.8em;
+  margin-right: 10px;
+}
+main #content #reyna h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 400px) {
+  main #content #reyna h2 {
+    font-size: 3.5em;
+  }
+}
+main #content #details {
+  width: 58%;
+  margin-top: 20px;
+}
+main #content #details h4 {
+  font-size: 1.5em;
+}
+main #content #details h4 img {
+  width: 18px;
+}
+main #content #details p {
+  font-size: 12px;
+  margin-top: 10px;
+}
+main #content .reyna-figure {
+  top: 140px;
+  right: -36px;
+  position: absolute;
+  width: 65%;
+}
+@media only screen and (min-width: 780px) {
+  main #content .reyna-figure {
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 28%;
+  }
+}
+main #signup {
+  position: relative;
+  background-image: url(images/Signup-Bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+main #signup div {
+  text-align: center;
+  position: relative;
+  top: 10%;
+  padding: 20px;
+}
+main #signup div h3 {
+  text-transform: uppercase;
+}
+main #signup div h3 .red {
+  font-family: valorant;
+}
+main #signup div p {
+  margin-top: 20px;
+}
+main #signup div fieldset {
+  border-block: none;
+  border: none;
+  margin-top: 20px;
+}
+main #signup div fieldset * {
+  width: 100%;
+}
+main #signup div fieldset input[type=text] {
+  height: 40px;
+  text-align: center;
+  opacity: 0.2;
+  border: none;
+  background-color: #FFFFFF;
+}
+main #signup div fieldset input[type=text] ::-moz-placeholder {
+  color: #717171;
+}
+main #signup div fieldset input[type=text] ::placeholder {
+  color: #717171;
+}
+main #signup div fieldset button {
+  height: 40px;
+  color: #FFFFFF;
+  background: #ff4654;
+  border: none;
+  margin-top: 10px;
+}
+main #signup img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+@media only screen and (min-width: 780px) {
+  main #signup {
+    background-position: right;
+  }
+  main #signup div {
+    width: 45%;
+    top: 40%;
+  }
+}
+main.japan #hero {
+  line-height: 3.5em;
+}
+main.japan #hero h1 {
+  font-size: 4em;
+}
+main.japan #hero h2 {
+  letter-spacing: 17px;
+}
+main.japan #hero p {
+  font-size: 2.4em;
+}
+main.japan #hero p > span {
+  font-size: 1em;
+  letter-spacing: 10px;
+}
+main.japan #hero .see-details {
+  line-height: 1em;
+}
+@media only screen and (max-width: 420px) {
+  main.japan #hero h1 {
+    font-size: 3.5em;
+  }
+  main.japan #hero h2 {
+    letter-spacing: 8px;
+  }
+  main.japan #hero p {
+    font-size: 1.9em;
+  }
+}
+@media only screen and (min-width: 780px) {
+  main.japan #hero > div:last-child .see-details i {
+    left: 40px;
+  }
+}
+main.japan #content #details {
+  width: 60%;
+}
+main.japan #content #details p {
+  line-height: 1.2em;
+}/*# sourceMappingURL=style.css.map */

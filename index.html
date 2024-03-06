@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section class="container">
+            <div id="hero">
+                <nav>
+                    <a href=""><i class="fa fa-bars"></i></a>
+                    <a href="" class="language"><i class="fa fa-globe"></i></a>
+                </nav>
+                <div class="language-content hidden">
+                    <a href="index.html"><img src="images/usa-flag.png" alt=""> English</a>
+                    <a href="japan.html"><img src="images/japan-flag.png" alt=""> Japanese</a>
+                </div>
+    
+                <div>
+                    <h1 class="red">Valorant</h1>
+                    <h2 class="stroke">Tournament</h2>
+                    <h3 class="red">2024</h3>
+                    <p>Dive into the fray, <br>Rise as a <span>legend</span>.</p>
+                    <a href="#content" class="see-details">See Details <br> <i class="fa fa-caret-down"></i></a>
+                </div>
+            </div>
+            <div id="content">
+                <div id="reyna">
+                    <div>
+                        <h2><span class="red">01.</span> Reyna</h2>
+                        <div>
+                            <h3 class="stroke">Top Pick Agent</h3>
+                            <img src="images/Framed-Reyna.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="details">
+                    <h4><img src="images/Duelist-Symbol.png" alt=""> DUELIST <span class="gray">/ ROLE</span></h4>
+                    <p>Zyanya Mondragón is a Radiant from Mexico with the power to absorb life energy from the souls of people that she kills. After being affected by a disastrous event involving machines, Mondragón has a strong dislike for technology and humanity, believing herself and her fellow Radiants to be the true future for Earth. Before her time as a VALORANT Protocol agent, she set up a sanctuary to help people escape from Kingdom and heal, establishing a community there and becoming their protector and avenger.</p>
+                </div>
+                <img src="images/Reyna-Figure.png" alt="" class="reyna-figure">
+            </div>
+            <div id="signup">
+                <div>
+                    <span class="gray">prepare for battle</span>
+                    <h3>rise as a <span class="red">valorant</span> champion</h3>
+                    <p>Sign up now for exclusive access, insider updates, and a front-row seat to tactical&nbsp;excellence!</p>
+                    <fieldset>
+                        <input type="text" placeholder="ENTER YOUR EMAIL...">
+                        <a href="#"><button>SIGNUP NOW!</button></a>
+                    </fieldset>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
+
+<script>
+    $('.language').on("click",function(){
+        $(".language-content").slideToggle();
+        event.preventDefault();
+    });
+</script>
